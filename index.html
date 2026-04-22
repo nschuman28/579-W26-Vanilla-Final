@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vanilla JS Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="container">
+  <div class="row">
+    
+  </div>
+</header>
+  <main class="container">
+    <div class="movie-card">
+    <h2>Movie Data Viewer</h2>
+    <p class="text-muted small">
+      Clicking "Get Movie" will display movie information. 
+    </p>
+    <div class="d-flex gap-2 mb-3">
+      <input type="text" id="movie-input" class="form-control" placeholder="e.g. Star Wars" style="max-width:220px" />
+      <button class="btn btn-primary" id="movie-btn">Get movie</button>
+    </div>
+    <div id="movie-result"></div>
+    <div><span class="zbox"></span><span class="zbox"></span><span class="zbox"></span></div>
+  </div>
+  </main>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
