@@ -13,14 +13,16 @@ movieButton.addEventListener("click",()=>{
     return response.json()
   } )
   .then((json) => {
+    if(json['Title']!==undefined){
     movieResult.innerHTML=
     `<img src="${json['Poster']}" height="500" width="500" alt="Poster">
       <h2>${json['Title']}</h2>
       <h3>${json['Director']}</h3>
       <h3>${json['Year']}</h3>
       <p>${json['Plot']}</p>`
+    }
+    else{
+      movieResult.innerHTML="Error, can't find movie"
+    }
   })
- .catch((error) => {
-  movieResult.innerHTML ="Error, movie not found."
-  });
 })
